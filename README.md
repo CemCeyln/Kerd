@@ -22,7 +22,7 @@
 
      c. Air
         
-        - Pawns can be moved by one, two, or three squares on their first move.
+        - Pawns can be moved by one, two or three squares on their first move.
         - A piece that in this region can capture a unit on any region.
      
   
@@ -42,22 +42,38 @@
      - If the attached pawn can't move as far as the commander pawn, they can only move as far as the attached pawn does.
      - If a pawn is captured on any square around this piece, the commander pawn can recapture on that square. 
 
-  3. Scout
-  
-  
-  4. Hussar
-
-
-  5. Tower (?)
-
-
-  6. Bishop (?)
+  3. Bishop (Rename)
      
+     - Moves and captures diagonally to any square as long as it follows the region rules.
   
-  7. Jumper (?)
-    
+  4. Scout
 
+     - Moves and captures like bishops.
+     - Is not affected by regions as mentioned in the rules.
+
+  5. Hussar
+
+     - Moves two squares forward and one square left, right or forward.
+     - If it jumps over an enemy piece after moving two squares forward, it can't go or capture forward.
+  
+  6. Jumper (Rename)
+     
+     - Moves one square to any direction.
+     - Captures on one square diagonal or forward.
+     - Can jump over a friendly or enemy piece if there is no piece behind it.
+     - Is affected by regions. This piece's jump ranges are [0, 1, and 2] on [water, land, and air] respectively.
+     - After the jump, it always lands on the square next to the piece that it jumps over.
+  
+  7. Tower (Rename)
+
+     - Moves orthogonally to any square.
+     - Is not affected by regions as mentioned in the rules.
+    
   8. Queen
 
+     - Moves and captures orthogonally or diagonally to any square.
+     - Is not affected by regions as mentioned in the rules.
 
   9. King
+
+     - Moves and captures one square orthogonally or diagonally.
