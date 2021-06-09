@@ -77,3 +77,4 @@
   9. King
 
      - Moves and captures one square orthogonally or diagonally.
+     - When a player capture oppenent's king, the game is over.
